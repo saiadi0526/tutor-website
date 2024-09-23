@@ -1,0 +1,69 @@
+--HTML
+after last section
+// Takeaways
+section.takeaways.section#takeaways
+    .container
+        .section-header
+            h2>Key Takeaways
+            .heading-border
+            p>This section highlights some of the key insights and learnings you'll gain from the course. Take a look at what you can expect to achieve:
+        .takeaways-cards
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Enhanced Skills< - Develop advanced skill in web design & Development
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Global Perspective< - Gain insights into industry trends and best practices
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Cloud Technology< - Explore the latest cloud technologies and tools
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Networking< - Connect with fellow professionals and expand your network
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Problem-Solving< - Enhance your problem-solving abilities and critical thinking skills
+            .card
+                i.fas.fa-rocket.fa-3x.text-primary
+                p>
+                    <strong>Technical Proficiency< - Improve your technical proficiency and stay ahead in the digital landscape.
+--CSS
+under // Utility Classes, under btn
+// Text Classes
+.text-primary { 
+    color var(--primary-color)
+}
+
+.text-secondary { //will make icons primary color
+    color var(--secondary-color)
+}
+
+above // Media Queries
+// Takeaways
+.takeaways-cards {
+    display grid
+    grid-template-columns repeat(3,1fr)
+    gap 2rem
+    padding 1.5rem 0
+
+    //to make icon on the left, you use flex. in the inspect section, it shows that flex direction is columns
+    .card {
+        flex-direction row
+        text-align left
+
+        i {
+            margin-right 1rem
+        }
+    }
+}
+
+@media (992) {
+    .takeaways-cards {
+        grid-template-columns 1fr
+    }
+}

@@ -1,0 +1,132 @@
+--HTML
+below header add // Learn Section
+.section.learn 
+    .container
+        .section-header
+            h2>What Will You Learn?
+            .heading-border
+            p>Embark on a journey of learning with our comprehensive video courses. Discover the secrets of successful video creation and enhance your skills.
+        .topics
+            .topic
+                .topic-image
+                    img src="images/description-1.jpg" alt topic
+                .topic-text
+                    h3>Set Clear Objectives and Goals   
+            .topic
+                .topic-image
+                    img src="images/description-2.jpg" alt alternative
+                .topic-text
+                    h3>Plan Layout And Design Elements  
+            .topic
+                .topic-image
+                    img src="images/description-3.jpg" alt alternative
+                .topic-text
+                    h3>Sketch Creative Concepts
+            .topic
+                .topic-image
+                    img src="images/description-4.jpg" alt alternative
+                .topic-text
+                    h3>Establish Call-to-Actions
+            .topic
+                .topic-image
+                    img src="images/description-5.jpg" alt alternative
+                .topic-text
+                    h3>Choose High-Quality HTML Templates
+            .topic
+                .topic-image
+                    img src="images/description-6.jpg" alt alternative
+                .topic-text
+                    h3>Create Impressive Layout Previews
+            .topic
+                .topic-image
+                    img src="images/description-7.jpg" alt alternative
+                .topic-text
+                    h3>Master Landing Page Coding Techniques
+            .topic
+                .topic-image
+                    img src="images/description-8.jpg" alt alternative
+                .topic-text
+                    h3>Launch Your Project Successfully Online
+
+
+--CSS
+under // Utility Classes under btn
+// Section Header
+.section-header {
+    max-width 750px
+    margin 0 auto
+    text-align center
+    margin-bottom 3rem
+
+    h2 {
+        font-size 2rem
+        font-weight 700
+        color var(--dark-color)
+        margin-bottom 0.5rem
+    }
+
+    p {
+        font-size 1.3rem
+        color var(--dark-color)
+    }
+}
+
+.heading-border {
+    width 64px
+    height 4px
+    background var(--primary-color)
+    margin 0 auto 2rem
+}
+
+
+above // Media Queries
+// Learn Topics
+.topics {
+    display grid
+    grid-template-columns repeat(4, 1fr)
+    gap 2rem
+}
+
+.topic {
+    img {
+        transition transform 0.3s //makes it smooth
+    }
+
+    img:hover {
+        transform scale(1.1)
+    }
+
+    h3 {
+        font-size 1.3rem
+        font-weight 700
+        margin 0.5rem 0
+    }
+}
+
+
+Under // Navbar
+.navbar.navbar-scroll {
+    // Change 0.7 to 0.8
+}
+
+
+Under // Media Quereies
+@media (1200) {
+    .topics {
+        grid-template-columns repeat(3, 1fr)
+    }
+}
+
+@media (992) {
+    .topics {
+        grid-template-columns repeat(2, 1fr)
+    }
+}
+
+@media (576) {
+    .topics {
+        grid-template-columns 1fr
+    }
+}
+
+ 

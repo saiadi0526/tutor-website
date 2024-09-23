@@ -1,0 +1,44 @@
+--HTML 
+----index.html
+// Nav 
+    role=navigation 
+    aria-label='Main Navigation'
+        // Main Menu
+            a href='/' 
+                aria-label='Logo Home Link'
+            img 
+                alt='Tutor Logo'
+                >>>a href=https://facebook.com
+                    aria-label='Follow Us On Facebook"
+                +a href=twitter-x 
+                    aria-label='Follow Us On X"
+        // Mobile Menu
+            >.mobile-menu-toggle 
+                role='button' 
+                aria-expanded='false' /*in js u have to set it to open*/
+                aria-controls='mobile-menu-items' 
+                aria-label='Open Mobile Menu' 
+                tabindex=0 /*needs tab to act as a button*/
+            >.mobile-menu-items 
+                id='mobile-menu-items'
+                //copy & replace social media links from .main-menu
+//change a '#' to '/' under .main-menu and .mobile-menu 
+//copy & replace nav onto contact.html//
+    // Social 
+        >>a
+            href='https://facebook.com'
+            target='_blank"
+            aria-label='Follow Us On Facebook"
+        //change the rest of the socials same way
+    // Stats
+        h3+h3+h3
+            aria-labelledby='stats-happy-users'
+            aria-labelledby='stats-issues-solved'
+            aria-labelledby='stats-good-reviews'
+            aria-labelledby='stats-case-studies'
+        p+p+p
+            id='stats-happy-users'
+            id='stats-issues-solved'
+            id='stats-good-reviews'
+            id='stats-case-studies'
+//copy & replace // Social onto contact.html//

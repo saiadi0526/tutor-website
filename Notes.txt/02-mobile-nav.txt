@@ -1,0 +1,67 @@
+under 768 media query, target .main-menu-items, dispay it to none
+
+to add mobile menu, go under the end of div of .main-menu-items
+
+Add comment for Mobile Menu
+- Add class of mobile-menu
+- Add comment for Hamburger Button 
+- Add class of mobile-menu-toggle
+    - Add i class of fas fa-bars fa-2x
+- Add comment for Mobile Menu Items
+    - Paste .main-menu-items and change it to .mobile-menu-items
+
+    
+Add comment for Mobile Menu above under under .navbar
+.mobile-menu-toggle
+    color #fff
+    cursor pointer
+.mobile-menu-items
+    position absolute
+    top 100%
+    left 0%
+    width 100%
+    background rgba(0,0,0,0.8)
+    opacity 0.95
+    padding 3rem 2rem
+    text-align center
+    box-shadow 0 2px 5px rgba(0,0,0,0.1)
+    border-top 1px solid rgba(255,255,255,0.1)
+.mobile-menu-list
+    display flex
+    flex-direction column
+    gap 2rem
+    font-size 1.2rem
+- To hide the mobile menu, add class of .mobile-menu atop of all classes under Mobile Menu comment
+    display none
+
+Under the 768 media query of .navbar 
+.mobile-menu 
+    display block
+.mobile-menu-toggle
+    display block
+    padding 10px
+
+To hide the off screen, under .mobile-menu-items,
+    transform translateX(100%)
+.mobile-menu-items.active { 
+    transform translateX(0)
+
+for smooth transition, under .mobile-menu-items 
+    transition transform 0.3s ease
+
+// JavaScript
+document.addEventListener('DOMContentLoaded', function (){
+    const toggleButton = document.querySelector('.navbar .mobile-menu-toggle');
+
+// to check if it is active, check console log on inspect mode, refresh page. DELETE 'console.log(toggleButton);' AFTER
+    console.log(toggleButton);
+
+const mobileMenu = document.querySelector('.navbar .mobile-menu-items');
+
+//to add active class
+toggleButton.addEventListener('click', function (){
+    mobileMenu.classList.toggle('active');
+})
+});
+
+

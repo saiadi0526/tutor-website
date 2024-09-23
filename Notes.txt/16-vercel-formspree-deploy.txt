@@ -1,0 +1,46 @@
+// Formspree /*for forms. Add a specific action to an endpoint and set the method of the form to post. Nake sure to have name attributes on your inputs*/
+1. Sign Up for Formspree and sign inputs
+2. '+', create new project, name:Adicherla type:dashboard, 'create project'
+3. '+' create form under Adicherla, name:Tutor Form email:sai.adicherla@gmail.com, 'create form'
+4. Under 'Code Examples', copy opening <form under HTML
+    - make sure to have names on your inputs
+    - go to your contact.html, paste/replace the <form
+
+// Github
+1. '+' Create new repository, name:tutor-website, set to private or public, 'create repository'
+2. Copy the commands under '...or push an existing.." 
+    --VSCode Terminal
+        1. git init
+        2. git add .
+        3. git commit -m 'Initial commit'
+        4. //paste 1st command from Github
+        5. //paste 2nd command 
+        6. //paste 3rd command
+3. reload Github
+
+// Vercel /*is like netlify, is free-tier, offers domains*/
+1. Login with Github
+2. (top) dropdown 'hobby', (right) 'add new' 'project')
+3. 'import' tutor-website
+4. 'deploy'
+5. Click on the ss to redirect to website
+
+---tutor-website 
+1. Submit a message through the contact page with a different email
+2. Check email to view submission notification
+
+// Formspree
+5. Check Dashboard to view submissions
+
+
+--HTML
+----index.html & contact.html
+// nav
+a href=index.html>home
+//
+mobile menu
+a href=index.html>home
+----VSCode Terminal
+        1. git add .
+        2. git commit -m 'Fixed home links'
+        3. git push

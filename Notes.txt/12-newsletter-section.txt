@@ -1,0 +1,55 @@
+--HTML
+// Newsletter under last section
+ section.newsletter.section#newsletter>.container.newsletter-flex>h2{Subscribe To Our Newsletter}+p{Stay updated with the latest news, offers, and insights from our platform. Join our newsletter community today!}+form>input:email#email+button:submit.btn{Subscribe}
+// name=email placeholder=Enter your email //':' input type
+
+--CSS
+above @m
+// Newsletter
+.newsletter {
+    ta:c
+    m 0 2rem
+}
+
+.newsletter-flex {
+    d:f
+    gap: 2rem
+    fxd:c
+    jc:c
+    ai:c
+    bg var(--light-color)
+    bd 1px solid #eee
+    p 4rem 2rem
+}
+
+.newsletter {
+    h2 {
+        fz 2rem
+        fw 700
+    }
+
+    p {
+        maw 600px
+    }
+
+    input[type='email'] {
+        p 1rem 2rem
+        bd 1px solid #ccc
+        bdrs 32px
+        w 100%
+        maw 400px
+        m 1rem 0
+    }
+}
+
+@m (576) {
+    .newsletter {
+        h2 {
+            fz 1.5
+        }
+        
+        p {
+            d:n
+        }
+    }
+}

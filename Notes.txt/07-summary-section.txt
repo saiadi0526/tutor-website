@@ -1,0 +1,63 @@
+--HTML
+under last section
+// Course Summary
+section.summary#summary //id bc part of navigation
+    .container
+        .section-header
+            h2>Course Summary
+            .heading-border
+        .section-lists
+            .list
+                .list-header>Setting Clear Objectives
+                .list-item>1.1 Learn to set clear and achievable objectives for your video projects, ensuring alignment with your overall goals.
+                .list-item>1.2 Explore strategies for defining specific objectives that guide the direction of your project and facilitate success.
+                .list-item>1.3 Understand the importance of setting measurable objectives to evaluate the effectiveness of your video content.
+            .list
+                .list-header>Content Creation Strategies
+                .list-item>2.1 Discover effective content creation strategies tailored to engage your target audience and convey your message effectively.
+                .list-item>2.2 Learn to craft compelling video content that resonates with viewers and inspires action, using storytelling and visual techniques.
+                .list-item>2.3 Explore methods for optimizing content creation processes to streamline production and maximize impact.
+            .list
+                .list-header>From Layout To HTML/CSS
+                .list-item>3.1 Master the transition from layout design to HTML/CSS implementation, ensuring seamless translation of visual concepts
+                .list-item>3.2 Dive into best practices for coding HTML and CSS, including responsive design principles and optimization techniques
+                .list-item>3.3 Gain proficiency in converting design mockups into interactive web pages, incorporating CSS styling and layout
+
+--CSS
+above // Media Queries
+// summary 
+.summary {
+    background var(--light-color)
+    color var(--dark-color)
+    padding 4rem 2rem 5rem
+
+    .section-lists{
+        background #ff
+        padding 2rem
+    }
+
+    .list-header {
+        background var(--primary-color)
+        color #fff
+        padding 0.5rem 1rem
+        font-size 1.2 rem
+        font-weight 700
+        margin 1rem 0
+    }
+
+    .list-item {
+        padding 1.4rem 
+        border-bottom 1px solid #f1f4f6
+    }
+
+    .list-item:last-child {
+        border-bottom none //removes border form last list item
+    }
+}
+
+// Media Queries
+@media (576) {
+    .summary .container {
+        padding 0
+    }
+}

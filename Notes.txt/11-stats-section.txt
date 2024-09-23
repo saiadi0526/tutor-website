@@ -1,0 +1,108 @@
+--HTML
+//add favicon
+go below css link
+link rel=icon href=./images/favicon.png
+
+below last section
+// Stats
+section.stats.section#stats
+    .container stats-flex
+        img src=images/stats.png alt=stats
+        .stats-content
+            .stats-numbers
+                div
+                    h3>2000+
+                    p>Happy Users
+
+                div
+                    h3>358
+                    p>Issues Solved
+
+                div
+                    h3>980
+                    p>Good Reviews
+
+                div
+                    h3>216
+                    p>Case Studies
+            p.stats-text> 
+            a.btn href=#>Get The Course
+
+--CSS
+above // Media Queries
+// Stats
+.stats {
+    background #000 url('../images/stats-background.jpg') center center/cover no-repeat //'..'means up one level
+    color #fff
+
+    img {
+        width 100%
+        max-width 500px
+    }
+
+    .stats-numbers {
+        display flex
+        gap 2rem
+        margin 2rem 0
+        text-align center
+        justify-content center
+        align-items center
+        flex-wrap wrap
+
+        h3 {
+            font-size 3rem
+            font-weight 700
+        }
+        p {
+            font-size 0.8rem
+        }
+    }
+
+    .stats-text {
+        font-size 1.2rem
+        margin-bottom 2rem
+        text-align center
+    }
+
+    .btn {
+        display block
+        margin 0 auto
+        text-align center
+        width 200px
+    }
+}
+
+.stats-flex {
+    display flex
+    justify-content space-between
+    align-items center
+    padding 4rem
+}
+
+
+.stats-content {
+    max-width 500px
+}
+
+
+merge any repetitive queries
+@media (992) {
+    .details-flex,
+    .details + .details .details-flex,
+    .stats .stats-flex {}
+
+    .chapter-cards,
+    .takeaways-cards {}
+}
+
+@media (768) {
+    .main-menu-items,
+    .info-left {}
+}
+
+@media (576) {
+    .stats .stats-numbers {
+        flex-direction column
+    }
+}
+

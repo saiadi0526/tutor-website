@@ -1,0 +1,30 @@
+Get a solid bg while scrolling, use js
+
+--CSS 
+.navbar.navbar-scroll {
+    background-color rgba(235,77,85,0.7)
+    backdrop-filter blur(10px)  //to test out manually add 'navbar-scroll' to nav class 
+}
+
+-JS
+// add comment above all -' Toggle Mobile Menu'
+
+// add comment bottom 'Change navbar background on scroll'
+window.addEventListener(
+    'scroll', function () {
+
+        console.log(123); //scroll to test it out and DELETE
+
+        console.log(window.scrollY); // represents where you are at and DELETE
+
+
+// if that window.scroll Y is greater than 0, then, I want to add the navbar scroll class
+// else, meaning, when not greater than 0 (at the top), I want to remove that class
+
+const navbar = querySelector('.navbar');
+
+    if (window.scrollY > 0) {
+        navbar.classList.add('navbar-scroll');
+    } else {
+        navbar.classList.remove('navbar-scroll')
+    }

@@ -1,0 +1,86 @@
+--HTML
+under last section 
+// Info
+.info#info
+    .info-container
+        .info-left //bc it will have nothing for img, will set to 50%
+        .info-content 
+            .h2>Who Is This Course for
+            p>This course is designed for individuals seeking to enhance their skills and knowledge in web design, development, and digital marketing. Whether you are a seasoned web designer, a budding web developer or a marketing professional looking to expand your skill set.
+            ul
+                li>
+                    i.fas.fa-check>Web Designers
+                li>
+                    i.fas.fa-check>Web Developers
+                li>
+                    i.fas.fa-check>Marketing Professionals
+                li>
+                    i.fas.fa-check>Entrepreneurs
+                li>
+                    i.fas.fa-check>Business Owners
+
+--CSS
+above // Media Queries
+// Info section 
+.info-container {
+    background url('../images/audience.jpg') top center/cover no-repeat;
+    display flex;
+}
+
+.info-content {
+    background-color var(--primary-color)
+    color #fff
+    flex 1
+    padding 4rem
+}
+
+.info-left {
+    width 50% //this will make info-content take up rest bc its set to flex1
+}
+
+.info-content {
+    h2 {
+        font-size 2rem
+        margin-bottom 1rem
+        font-weight 700
+    }
+
+    p {
+        font-size 1.2rem
+        margin-bottom 2rem
+    }
+
+    ul li {
+        font-size 1.2rem
+        line-height 2
+    }
+
+    i {
+        margin-right 0.5rem
+        color var(--secondary-color)
+    }
+}
+
+// Media Queries
+@media (768) {
+    .info-container {
+        flex-direction column
+    }
+
+    //to hide img on smaller screens
+    .info-content {
+        padding 2rem
+
+        h2 {
+            font-size 1.5rem
+        }
+
+        p {
+            font-size 1rem
+        }
+    }
+
+    .info-left {
+        display none
+    }
+}
